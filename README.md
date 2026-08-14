@@ -4,6 +4,10 @@ Made by dobrosabokja!
 ## Setup
 Make an account on the [dashboard](https://wwlc.legiti.dev/) and submit your world for verification. after submitting, notify a dev in the WWLC legitidevs channel
 
+## Depositing money
+By default, your world has 0 LC. you can recieve a loan from one of the bank managers at the WWLC central bank.
+After getting your loan, you can deposit LC into your world. set up a job of type "buy" called something like "myworld-admin-deposit" (as instructed below) with the amount you wish to deposit, and run the transaction function (once again, read below) with your job id.
+
 ### Job creation
 Create a job on the dashboard:
 
