@@ -1,4 +1,5 @@
 # WWLC Datapack
+Made by dobrosabokja!
 
 ## Setup
 Make an account on the [dashboard](https://wwlc.legiti.dev/) and submit your world for verification. after submitting, notify a dev in the WWLC legitidevs channel
@@ -28,5 +29,9 @@ as mentioned previously, "sell" transfers the amount LC from the user to the wor
 
 the user will be prompted to verify the transaction on the dashboard and the datapack will start polling for the transaction status
 
-## Polling
-idk man someone help
+### Callback
+after creating a transaction, the datapack will start polling for the status every 5 sesconds
+
+depending on the status, the `#wwlc:transaction_approved` or `#wwlc:transaction_rejected` will be ran with "user" (uuid) and "job_id" passed as macro arguments
+
+use the job id to decide the reward, for example if you have a job "buy-diamond-sword" and your transaction_approved callback function is ran with that job id give the user a diamond sword :) or if your job is of type "buy" just notify the admins that LC has been transferred from the world to the user for whatever reason
